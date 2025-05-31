@@ -1,0 +1,11 @@
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Core\ProductionTracker.Domain\bin\Debug\net8.0\ProductionTracker.Domain.deps.json
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Core\ProductionTracker.Domain\bin\Debug\net8.0\ProductionTracker.Domain.dll
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Core\ProductionTracker.Domain\bin\Debug\net8.0\ProductionTracker.Domain.pdb
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Core\ProductionTracker.Domain\obj\Debug\net8.0\ProductionTracker.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Core\ProductionTracker.Domain\obj\Debug\net8.0\ProductionTracker.Domain.AssemblyInfoInputs.cache
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Core\ProductionTracker.Domain\obj\Debug\net8.0\ProductionTracker.Domain.AssemblyInfo.cs
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Core\ProductionTracker.Domain\obj\Debug\net8.0\ProductionTracker.Domain.csproj.CoreCompileInputs.cache
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Core\ProductionTracker.Domain\obj\Debug\net8.0\ProductionTracker.Domain.dll
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Core\ProductionTracker.Domain\obj\Debug\net8.0\refint\ProductionTracker.Domain.dll
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Core\ProductionTracker.Domain\obj\Debug\net8.0\ProductionTracker.Domain.pdb
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Core\ProductionTracker.Domain\obj\Debug\net8.0\ref\ProductionTracker.Domain.dll

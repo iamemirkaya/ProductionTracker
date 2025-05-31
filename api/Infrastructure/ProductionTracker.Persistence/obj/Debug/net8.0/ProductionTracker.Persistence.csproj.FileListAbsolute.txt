@@ -1,0 +1,17 @@
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Persistence\bin\Debug\net8.0\ProductionTracker.Persistence.deps.json
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Persistence\bin\Debug\net8.0\ProductionTracker.Persistence.runtimeconfig.json
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Persistence\bin\Debug\net8.0\ProductionTracker.Persistence.dll
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Persistence\bin\Debug\net8.0\ProductionTracker.Persistence.pdb
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Persistence\bin\Debug\net8.0\ProductionTracker.Domain.dll
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Persistence\bin\Debug\net8.0\ProductionTracker.Domain.pdb
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Persistence\obj\Debug\net8.0\ProductionTracker.Persistence.csproj.AssemblyReference.cache
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Persistence\obj\Debug\net8.0\ProductionTracker.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Persistence\obj\Debug\net8.0\ProductionTracker.Persistence.AssemblyInfoInputs.cache
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Persistence\obj\Debug\net8.0\ProductionTracker.Persistence.AssemblyInfo.cs
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Persistence\obj\Debug\net8.0\ProductionTracker.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Persistence\obj\Debug\net8.0\Producti.25660A0E.Up2Date
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Persistence\obj\Debug\net8.0\ProductionTracker.Persistence.dll
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Persistence\obj\Debug\net8.0\refint\ProductionTracker.Persistence.dll
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Persistence\obj\Debug\net8.0\ProductionTracker.Persistence.pdb
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Persistence\obj\Debug\net8.0\ProductionTracker.Persistence.genruntimeconfig.cache
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Persistence\obj\Debug\net8.0\ref\ProductionTracker.Persistence.dll

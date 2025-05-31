@@ -1,0 +1,11 @@
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Infrastructure\bin\Debug\net8.0\ProductionTracker.Infrastructure.deps.json
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Infrastructure\bin\Debug\net8.0\ProductionTracker.Infrastructure.dll
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Infrastructure\bin\Debug\net8.0\ProductionTracker.Infrastructure.pdb
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Infrastructure\obj\Debug\net8.0\ProductionTracker.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Infrastructure\obj\Debug\net8.0\ProductionTracker.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Infrastructure\obj\Debug\net8.0\ProductionTracker.Infrastructure.AssemblyInfo.cs
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Infrastructure\obj\Debug\net8.0\ProductionTracker.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Infrastructure\obj\Debug\net8.0\ProductionTracker.Infrastructure.dll
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Infrastructure\obj\Debug\net8.0\refint\ProductionTracker.Infrastructure.dll
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Infrastructure\obj\Debug\net8.0\ProductionTracker.Infrastructure.pdb
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Infrastructure\obj\Debug\net8.0\ref\ProductionTracker.Infrastructure.dll
