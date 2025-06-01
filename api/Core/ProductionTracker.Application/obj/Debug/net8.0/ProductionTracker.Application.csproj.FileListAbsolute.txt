@@ -9,3 +9,8 @@ C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Core\ProductionTracker
 C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Core\ProductionTracker.Application\obj\Debug\net8.0\refint\ProductionTracker.Application.dll
 C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Core\ProductionTracker.Application\obj\Debug\net8.0\ProductionTracker.Application.pdb
 C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Core\ProductionTracker.Application\obj\Debug\net8.0\ref\ProductionTracker.Application.dll
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Core\ProductionTracker.Application\bin\Debug\net8.0\ProductionTracker.Domain.dll
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Core\ProductionTracker.Application\bin\Debug\net8.0\ProductionTracker.Domain.pdb
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Core\ProductionTracker.Application\obj\Debug\net8.0\ProductionTracker.Application.csproj.AssemblyReference.cache
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Core\ProductionTracker.Application\obj\Debug\net8.0\ProductionTracker.Application.sourcelink.json
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Core\ProductionTracker.Application\obj\Debug\net8.0\Producti.6C2F4584.Up2Date

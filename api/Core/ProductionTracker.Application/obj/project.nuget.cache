@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "spSZU6innBE=",
+  "dgSpecHash": "BmgK4pzcYOA=",
   "success": true,
   "projectFilePath": "C:\\Users\\emir kaya\\Desktop\\Projeler\\ProductionTracker\\api\\Core\\ProductionTracker.Application\\ProductionTracker.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\emir kaya\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",
+    "C:\\Users\\emir kaya\\.nuget\\packages\\mediatr\\12.5.0\\mediatr.12.5.0.nupkg.sha512",
+    "C:\\Users\\emir kaya\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\emir kaya\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.10\\microsoft.entityframeworkcore.8.0.10.nupkg.sha512",
     "C:\\Users\\emir kaya\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.10\\microsoft.entityframeworkcore.abstractions.8.0.10.nupkg.sha512",
     "C:\\Users\\emir kaya\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.10\\microsoft.entityframeworkcore.analyzers.8.0.10.nupkg.sha512",
