@@ -10,5 +10,9 @@ namespace ProductionTracker.Domain.Entities
     public class Product : EntityBase
     {
         public string Name { get; set; }
+
+        public string Code { get; set; }
+
+        public decimal UnitPrice { get; set; }
     }
 }

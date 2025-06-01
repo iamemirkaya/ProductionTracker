@@ -9,3 +9,4 @@ C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Core\ProductionTracker
 C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Core\ProductionTracker.Domain\obj\Debug\net8.0\refint\ProductionTracker.Domain.dll
 C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Core\ProductionTracker.Domain\obj\Debug\net8.0\ProductionTracker.Domain.pdb
 C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Core\ProductionTracker.Domain\obj\Debug\net8.0\ref\ProductionTracker.Domain.dll
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Core\ProductionTracker.Domain\obj\Debug\net8.0\ProductionTracker.Domain.sourcelink.json

@@ -23,10 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\Core\ProductionTracker.Application\ProductionTracker.Application.csproj" />
     <ProjectReference Include="..\..\Infrastructure\ProductionTracker.Persistence\ProductionTracker.Persistence.csproj" />
   </ItemGroup>

@@ -147,3 +147,7 @@ C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Presentation\Productio
 C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Presentation\ProductionTracker.Api\bin\Debug\net8.0\ProductionTracker.Domain.pdb
 C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Presentation\ProductionTracker.Api\bin\Debug\net8.0\ProductionTracker.Application.dll
 C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Presentation\ProductionTracker.Api\bin\Debug\net8.0\ProductionTracker.Application.pdb
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Presentation\ProductionTracker.Api\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Presentation\ProductionTracker.Api\bin\Debug\net8.0\MediatR.dll
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Presentation\ProductionTracker.Api\bin\Debug\net8.0\MediatR.Contracts.dll
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Presentation\ProductionTracker.Api\obj\Debug\net8.0\ProductionTracker.Api.sourcelink.json
