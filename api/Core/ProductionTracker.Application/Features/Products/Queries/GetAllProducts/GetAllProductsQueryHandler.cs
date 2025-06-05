@@ -1,4 +1,6 @@
 ﻿using MediatR;
+using ProductionTracker.Application.Bases;
+using ProductionTracker.Application.Interfaces.AutoMapper;
 using ProductionTracker.Application.Interfaces.UnitOfWorks;
 using ProductionTracker.Domain.Entities;
 using System;
@@ -9,26 +11,26 @@ using System.Threading.Tasks;
 
 namespace ProductionTracker.Application.Features.Products.Queries.GetAllProducts
 {
-    public class GetAllProductsQueryHandler : IRequestHandler<GetAllProductsQueryRequest, IList<GetAllProductsQueryResponse>>
+    public class GetAllProductsQueryHandler
+        : BaseHandler, IRequestHandler<GetAllProductsQueryRequest, IList<GetAllProductsQueryResponse>>
     {
-        private readonly IUnitOfWork _unitOfWork;
-
-        public GetAllProductsQueryHandler(IUnitOfWork unitOfWork)
+        public GetAllProductsQueryHandler(IUnitOfWork unitOfWork, IMapper mapper)
+            : base(unitOfWork, mapper)
         {
-            _unitOfWork = unitOfWork;
         }
 
-        public async Task<IList<GetAllProductsQueryResponse>> Handle(GetAllProductsQueryRequest request, CancellationToken cancellationToken)
+        public async Task<IList<GetAllProductsQueryResponse>> Handle(
+            GetAllProductsQueryRequest request,
+            CancellationToken cancellationToken)
         {
-            var readRepository = _unitOfWork.GetReadRepository<Product>();
-            var shifts = await readRepository.GetAllAsync();
-            return shifts.Select(x => new GetAllProductsQueryResponse
-            {
-                Name = x.Name,
-                Code = x.Code,
-                UnitPrice = x.UnitPrice
+            // Read repository'yi al ve ürünleri getir
+            var productRepository = unitOfWork.GetReadRepository<Product>();
+            var products = await productRepository.GetAllAsync();
 
-            }).ToList();
+            // AutoMapper aracılığıyla DTO'ya dönüştür
+            var mappedProducts = mapper.Map<IList<GetAllProductsQueryResponse>>(products);
+
+            return mappedProducts;
         }
     }
 }

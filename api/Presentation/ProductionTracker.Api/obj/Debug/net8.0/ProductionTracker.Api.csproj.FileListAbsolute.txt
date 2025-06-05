@@ -1,6 +1,5 @@
 C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Presentation\ProductionTracker.Api\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Presentation\ProductionTracker.Api\bin\Debug\net8.0\appsettings.json
-C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Presentation\ProductionTracker.Api\bin\Debug\net8.0\appsettings.Production.json.json
 C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Presentation\ProductionTracker.Api\bin\Debug\net8.0\ProductionTracker.Api.exe
 C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Presentation\ProductionTracker.Api\bin\Debug\net8.0\ProductionTracker.Api.deps.json
 C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Presentation\ProductionTracker.Api\bin\Debug\net8.0\ProductionTracker.Api.runtimeconfig.json
@@ -151,3 +150,4 @@ C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Presentation\Productio
 C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Presentation\ProductionTracker.Api\bin\Debug\net8.0\MediatR.dll
 C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Presentation\ProductionTracker.Api\bin\Debug\net8.0\MediatR.Contracts.dll
 C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Presentation\ProductionTracker.Api\obj\Debug\net8.0\ProductionTracker.Api.sourcelink.json
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Presentation\ProductionTracker.Api\bin\Debug\net8.0\appsettings.Production.json

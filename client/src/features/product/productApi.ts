@@ -9,7 +9,7 @@ export const productApi = createApi({
   baseQuery: baseQueryWithErrorHandling,
   endpoints: (builder) => ({
     getAllProducts: builder.query<Product[], void>({
-      query: () => 'product/productlist',
+      query: () => 'api/Product/ProductList',
     })
   }),
 });

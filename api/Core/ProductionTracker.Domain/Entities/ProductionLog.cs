@@ -22,5 +22,7 @@ namespace ProductionTracker.Domain.Entities
         public DateOnly dateOnly { get; set; }
 
         public int AbsenceCount { get; set; }
+
+        public int ProducedQuantity { get; set; }
     }
 }

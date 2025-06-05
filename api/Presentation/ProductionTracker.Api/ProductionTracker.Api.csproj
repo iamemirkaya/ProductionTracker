@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Update="appsettings.Production.json.json">
+    <Content Update="appsettings.Production.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
@@ -24,6 +24,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Core\ProductionTracker.Application\ProductionTracker.Application.csproj" />
+    <ProjectReference Include="..\..\Core\ProductionTracker.Mapper\ProductionTracker.Mapper.csproj" />
     <ProjectReference Include="..\..\Infrastructure\ProductionTracker.Persistence\ProductionTracker.Persistence.csproj" />
   </ItemGroup>
 
