@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using ProductionTracker.Domain.Common;
 using ProductionTracker.Domain.Entities;
+using System.Linq.Expressions;
 using System.Reflection;
 
 namespace ProductionTracker.Persistence.Context
@@ -21,6 +23,18 @@ namespace ProductionTracker.Persistence.Context
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+
+            foreach (var entityType in modelBuilder.Model.GetEntityTypes())
+            {
+                if (typeof(IEntityBase).IsAssignableFrom(entityType.ClrType))
+                {
+                    var parameter = Expression.Parameter(entityType.ClrType, "e");
+                    var isDeletedProperty = Expression.Property(parameter, nameof(EntityBase.IsDeleted));
+                    var compareExpression = Expression.Equal(isDeletedProperty, Expression.Constant(false));
+                    var lambda = Expression.Lambda(compareExpression, parameter);
+                    modelBuilder.Entity(entityType.ClrType).HasQueryFilter(lambda);
+                }
+            }
         }
     }
 }

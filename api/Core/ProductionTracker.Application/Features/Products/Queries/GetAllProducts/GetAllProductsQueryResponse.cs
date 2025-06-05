@@ -13,5 +13,9 @@ namespace ProductionTracker.Application.Features.Products.Queries.GetAllProducts
         public string Code { get; set; }
 
         public decimal UnitPrice { get; set; }
+
+        public string? ImageUrl { get; set; }
+
+        public int StockQuantity { get; set; }
     }
 }

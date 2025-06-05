@@ -1,11 +1,12 @@
 import { Outlet } from 'react-router-dom';
-import SideBar from './SideBar'; // senin Sidebar bileşenin buysa
+import SideBar from './SideBar';
+
 
 function App() {
   return (
-    <div style={{ display: 'flex' }}>
+    <div className="flex">
       <SideBar />
-      <main style={{ flexGrow: 1, padding: '1rem' }}>
+      <main className="flex-1 p-4 bg-gray-100 min-h-screen">
         <Outlet />
       </main>
     </div>

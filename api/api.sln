@@ -9,15 +9,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{E9BD6A88-CD18-481F-9B1B-DC61BA49ECED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductionTracker.Application", "Core\ProductionTracker.Application\ProductionTracker.Application.csproj", "{6B6F8A7A-6ADA-4514-AA54-76CA56002FC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductionTracker.Application", "Core\ProductionTracker.Application\ProductionTracker.Application.csproj", "{6B6F8A7A-6ADA-4514-AA54-76CA56002FC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductionTracker.Domain", "Core\ProductionTracker.Domain\ProductionTracker.Domain.csproj", "{6C85550A-B6F1-44C4-9CF4-0E8EF25B56AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductionTracker.Domain", "Core\ProductionTracker.Domain\ProductionTracker.Domain.csproj", "{6C85550A-B6F1-44C4-9CF4-0E8EF25B56AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductionTracker.Infrastructure", "Infrastructure\ProductionTracker.Infrastructure\ProductionTracker.Infrastructure.csproj", "{1AE3E364-CD15-4CC1-B203-3A619CAB9C0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductionTracker.Infrastructure", "Infrastructure\ProductionTracker.Infrastructure\ProductionTracker.Infrastructure.csproj", "{1AE3E364-CD15-4CC1-B203-3A619CAB9C0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductionTracker.Persistence", "Infrastructure\ProductionTracker.Persistence\ProductionTracker.Persistence.csproj", "{5E4A13E5-45A4-4D2D-9672-CA7A326323D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductionTracker.Persistence", "Infrastructure\ProductionTracker.Persistence\ProductionTracker.Persistence.csproj", "{5E4A13E5-45A4-4D2D-9672-CA7A326323D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductionTracker.Api", "Presentation\ProductionTracker.Api\ProductionTracker.Api.csproj", "{3C60A5BF-D80C-4BCE-8928-54198776C7A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductionTracker.Api", "Presentation\ProductionTracker.Api\ProductionTracker.Api.csproj", "{3C60A5BF-D80C-4BCE-8928-54198776C7A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductionTracker.Mapper", "Core\ProductionTracker.Mapper\ProductionTracker.Mapper.csproj", "{072FA7AB-77EE-47E2-B2E0-4851F927174F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{3C60A5BF-D80C-4BCE-8928-54198776C7A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C60A5BF-D80C-4BCE-8928-54198776C7A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C60A5BF-D80C-4BCE-8928-54198776C7A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{072FA7AB-77EE-47E2-B2E0-4851F927174F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{072FA7AB-77EE-47E2-B2E0-4851F927174F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{072FA7AB-77EE-47E2-B2E0-4851F927174F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{072FA7AB-77EE-47E2-B2E0-4851F927174F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{1AE3E364-CD15-4CC1-B203-3A619CAB9C0C} = {9EC4C215-4EF7-4061-937F-932AFBCBE73B}
 		{5E4A13E5-45A4-4D2D-9672-CA7A326323D3} = {9EC4C215-4EF7-4061-937F-932AFBCBE73B}
 		{3C60A5BF-D80C-4BCE-8928-54198776C7A2} = {E9BD6A88-CD18-481F-9B1B-DC61BA49ECED}
+		{072FA7AB-77EE-47E2-B2E0-4851F927174F} = {26A7E287-E1FC-4CD0-BB44-89441FE74A2B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {210511D5-9949-49EB-9892-5DD052E810E9}

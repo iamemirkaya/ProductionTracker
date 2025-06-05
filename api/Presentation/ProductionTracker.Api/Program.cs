@@ -1,5 +1,6 @@
 using ProductionTracker.Application;
 using ProductionTracker.Persistence;
+using ProductionTracker.Mapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,10 +20,16 @@ builder.Configuration
 
 builder.Services.AddPersistence(builder.Configuration);
 builder.Services.AddApplication();
+builder.Services.AddCustomMapper();
 
 
 
 var app = builder.Build();
+
+app.UseCors(opt =>
+{
+    opt.AllowAnyHeader().AllowAnyMethod().AllowCredentials().WithOrigins("http://localhost:5173");
+});
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -30,6 +37,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
 
 app.UseAuthorization();
 

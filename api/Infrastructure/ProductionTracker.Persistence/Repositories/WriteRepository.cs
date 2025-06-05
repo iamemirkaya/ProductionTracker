@@ -46,7 +46,9 @@ namespace ProductionTracker.Persistence.Repositories
 
         public async Task SoftDeleteAsync(T entity)
         {
-            await Task.Run(() => Table.Update(entity));
+            entity.IsDeleted = true;
+            Table.Update(entity);
+            await Task.CompletedTask;
         }
     }
 }
