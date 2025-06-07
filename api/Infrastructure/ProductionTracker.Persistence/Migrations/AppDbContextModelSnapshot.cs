@@ -45,6 +45,9 @@ namespace ProductionTracker.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("PublicId")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("StockQuantity")
                         .HasColumnType("int");
 

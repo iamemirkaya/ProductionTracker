@@ -1,6 +1,8 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using ProductionTracker.Application.Features.Products.Command.CreateProduct;
+using ProductionTracker.Application.Features.Products.Command.DeleteProduct;
+using ProductionTracker.Application.Features.Products.Command.UpdateProduct;
 using ProductionTracker.Application.Features.Products.Queries.GetAllProducts;
 
 namespace ProductionTracker.Api.Controllers
@@ -28,6 +30,22 @@ namespace ProductionTracker.Api.Controllers
         {
             var values = await mediator.Send(new GetAllProductsQueryRequest());
             return Ok(values);
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateProduct(Guid id, [FromForm] UpdateProductCommandRequest request)
+        {
+            request.Id = id;
+            await mediator.Send(request);
+            return Ok("Ürün başarıyla güncellendi.");
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteProduct(Guid id)
+        {
+            var deleteCommand = new DeleteProductCommandRequest { Id = id };
+            await mediator.Send(deleteCommand);
+            return Ok("Ürün başarıyla silindi.");
         }
     }
 }

@@ -18,5 +18,7 @@ namespace ProductionTracker.Domain.Entities
         public string? ImageUrl { get; set; }
 
         public int StockQuantity { get; set; }
+
+        public string? PublicId { get; set; }
     }
 }

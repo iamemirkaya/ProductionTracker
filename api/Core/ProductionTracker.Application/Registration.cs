@@ -25,6 +25,8 @@ namespace ProductionTracker.Application
 
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(assembly));
 
+            services.AddTransient<ExceptionMiddleware>();
+
             services.AddRulesFromAssemblyContaining(assembly, typeof(BaseRules));
 
             services.AddScoped<ExceptionMiddleware>();

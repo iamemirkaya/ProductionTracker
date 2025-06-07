@@ -26,6 +26,9 @@ export default function SideBar() {
         <Link to="/product" className="hover:bg-gray-700 p-2 rounded text-sm w-full text-left">
           {open ? "Ürünler" : "📦"}
         </Link>
+        <Link to="/productadd" className="hover:bg-gray-700 p-2 rounded text-sm w-full text-left">           
+          {open ? "Ürün Ekle" : "➕"}         
+        </Link> 
       </nav>
     </div>
   );

@@ -28,5 +28,9 @@ namespace ProductionTracker.Application.Interfaces.Repositories
         IQueryable<T> Find(Expression<Func<T, bool>> predicate, bool enableTracking = false);
 
         Task<int> CountAsync(Expression<Func<T, bool>>? predicate = null);
+
+        Task<T> GetByIdAsync(Guid id, bool enableTracking = false);
+
+        Task<bool> AnyAsync(Expression<Func<T, bool>> predicate);
     }
 }

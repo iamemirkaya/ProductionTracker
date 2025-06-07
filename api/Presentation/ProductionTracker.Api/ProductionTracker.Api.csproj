@@ -25,6 +25,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Core\ProductionTracker.Application\ProductionTracker.Application.csproj" />
     <ProjectReference Include="..\..\Core\ProductionTracker.Mapper\ProductionTracker.Mapper.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\ProductionTracker.Infrastructure\ProductionTracker.Infrastructure.csproj" />
     <ProjectReference Include="..\..\Infrastructure\ProductionTracker.Persistence\ProductionTracker.Persistence.csproj" />
   </ItemGroup>
 

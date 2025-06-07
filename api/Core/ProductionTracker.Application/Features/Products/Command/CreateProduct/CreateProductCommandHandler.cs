@@ -1,35 +1,45 @@
 ﻿using MediatR;
+using ProductionTracker.Application.Bases;
+using ProductionTracker.Application.Features.Products.BusinessRules;
+using ProductionTracker.Application.Interfaces.AutoMapper;
+using ProductionTracker.Application.Interfaces.ImageService;
+using ProductionTracker.Application.Interfaces.Repositories;
 using ProductionTracker.Application.Interfaces.UnitOfWorks;
 using ProductionTracker.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace ProductionTracker.Application.Features.Products.Command.CreateProduct
 {
-    public class CreateProductCommandHandler : IRequestHandler<CreateProductCommandRequest, Unit>
+    public class CreateProductCommandHandler : BaseHandler, IRequestHandler<CreateProductCommandRequest, Unit>
     {
-        private readonly IUnitOfWork _unitOfWork;
+        private readonly IImageService imageService;
+        private readonly ProductBusinessRules productBusinessRules;
 
-
-        public CreateProductCommandHandler(IUnitOfWork unitOfWork)
+        public CreateProductCommandHandler(IUnitOfWork unitOfWork, ProductBusinessRules productBusinessRules, IImageService imageService) : base(unitOfWork)
         {
-            _unitOfWork = unitOfWork;
+            this.productBusinessRules = productBusinessRules;
+            this.imageService = imageService;
         }
 
         public async Task<Unit> Handle(CreateProductCommandRequest request, CancellationToken cancellationToken)
         {
-            var writeRepository = _unitOfWork.GetWriteRepository<Product>();
+
+            await productBusinessRules.EnsureProductNameIsUnique(request.Name);
+
+            var uploadResult = await imageService.AddImageAsync(request.File);
+
+            var writeRepository = unitOfWork.GetWriteRepository<Product>();
             await writeRepository.AddAsync(new Product
             {
-                Name = request.Name,
-                Code = request.Code,
-                UnitPrice = request.UnitPrice
+                 Code = request.Code,
+                 Name = request.Name,
+                 StockQuantity = request.StockQuantity,
+                 UnitPrice = request.UnitPrice,
+                ImageUrl = uploadResult.SecureUrl.ToString(),
+                PublicId = uploadResult.PublicId
             });
 
-            await _unitOfWork.SaveAsync();
+            await unitOfWork.SaveAsync();
 
             return Unit.Value;
         }

@@ -71,5 +71,19 @@ namespace ProductionTracker.Persistence.Repositories
             if (!enableTracking) Table.AsNoTracking();
             return Table.Where(predicate);
         }
+
+        public async Task<T> GetByIdAsync(Guid id, bool enableTracking = false)
+        {
+            IQueryable<T> queryable = Table;
+            if (!enableTracking)
+                queryable = queryable.AsNoTracking();
+
+            return await queryable.FirstOrDefaultAsync(x => x.Id == id && !x.IsDeleted);
+        }
+
+        public async Task<bool> AnyAsync(Expression<Func<T, bool>> predicate)
+        {
+            return await Table.AnyAsync(predicate);
+        }
     }
 }

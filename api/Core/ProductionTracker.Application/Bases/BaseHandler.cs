@@ -11,12 +11,10 @@ namespace ProductionTracker.Application.Bases
     public class BaseHandler
     {
         public readonly IUnitOfWork unitOfWork;
-        public readonly IMapper mapper;
 
-        public BaseHandler(IUnitOfWork unitOfWork, IMapper mapper)
+        public BaseHandler(IUnitOfWork unitOfWork)
         {
             this.unitOfWork = unitOfWork;
-            this.mapper = mapper;
 
         }
     }

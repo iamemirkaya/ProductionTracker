@@ -1,6 +1,8 @@
 using ProductionTracker.Application;
 using ProductionTracker.Persistence;
 using ProductionTracker.Mapper;
+using ProductionTracker.Infrastructure;
+using ProductionTracker.Application.Exceptions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +23,8 @@ builder.Configuration
 builder.Services.AddPersistence(builder.Configuration);
 builder.Services.AddApplication();
 builder.Services.AddCustomMapper();
+builder.Services.AddInfrastructure(builder.Configuration);
+
 
 
 
@@ -37,7 +41,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.ConfigureExceptionHandlingMiddleware();
 
 app.UseAuthorization();
 
