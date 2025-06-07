@@ -14,23 +14,22 @@ namespace ProductionTracker.Application.Features.Products.Queries.GetAllProducts
     public class GetAllProductsQueryHandler
         : BaseHandler, IRequestHandler<GetAllProductsQueryRequest, IList<GetAllProductsQueryResponse>>
     {
+
+        private readonly IMapper mapper;    
         public GetAllProductsQueryHandler(IUnitOfWork unitOfWork, IMapper mapper)
-            : base(unitOfWork, mapper)
+            : base(unitOfWork)
         {
+            this.mapper = mapper;
         }
 
-        public async Task<IList<GetAllProductsQueryResponse>> Handle(
-            GetAllProductsQueryRequest request,
-            CancellationToken cancellationToken)
+        public async Task<IList<GetAllProductsQueryResponse>> Handle(GetAllProductsQueryRequest request, CancellationToken cancellationToken)
         {
-            // Read repository'yi al ve ürünleri getir
             var productRepository = unitOfWork.GetReadRepository<Product>();
             var products = await productRepository.GetAllAsync();
 
-            // AutoMapper aracılığıyla DTO'ya dönüştür
-            var mappedProducts = mapper.Map<IList<GetAllProductsQueryResponse>>(products);
+            
 
-            return mappedProducts;
+            return mapper.Map<GetAllProductsQueryResponse, Product>(products);
         }
     }
 }

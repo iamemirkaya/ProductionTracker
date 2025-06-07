@@ -9,3 +9,10 @@ C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\Product
 C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Infrastructure\obj\Debug\net8.0\refint\ProductionTracker.Infrastructure.dll
 C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Infrastructure\obj\Debug\net8.0\ProductionTracker.Infrastructure.pdb
 C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Infrastructure\obj\Debug\net8.0\ref\ProductionTracker.Infrastructure.dll
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Infrastructure\bin\Debug\net8.0\ProductionTracker.Application.dll
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Infrastructure\bin\Debug\net8.0\ProductionTracker.Domain.dll
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Infrastructure\bin\Debug\net8.0\ProductionTracker.Application.pdb
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Infrastructure\bin\Debug\net8.0\ProductionTracker.Domain.pdb
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Infrastructure\obj\Debug\net8.0\ProductionTracker.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Infrastructure\obj\Debug\net8.0\ProductionTracker.Infrastructure.sourcelink.json
+C:\Users\emir kaya\Desktop\Projeler\ProductionTracker\api\Infrastructure\ProductionTracker.Infrastructure\obj\Debug\net8.0\Producti.DE00D69D.Up2Date

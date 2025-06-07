@@ -10,8 +10,15 @@ export const productApi = createApi({
   endpoints: (builder) => ({
     getAllProducts: builder.query<Product[], void>({
       query: () => 'api/Product/ProductList',
-    })
+    }),
+    addProduct: builder.mutation<void, FormData>({
+      query: (formData) => ({
+        url: 'api/Product/CreateProduct',
+        method: 'POST',
+        body: formData,
+      }),
+    }),
   }),
 });
 
-export const {useGetAllProductsQuery} = productApi;
+export const {useGetAllProductsQuery,useAddProductMutation} = productApi;
