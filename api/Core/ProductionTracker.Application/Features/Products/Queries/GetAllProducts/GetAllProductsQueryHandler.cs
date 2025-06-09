@@ -11,8 +11,7 @@ using System.Threading.Tasks;
 
 namespace ProductionTracker.Application.Features.Products.Queries.GetAllProducts
 {
-    public class GetAllProductsQueryHandler
-        : BaseHandler, IRequestHandler<GetAllProductsQueryRequest, IList<GetAllProductsQueryResponse>>
+    public class GetAllProductsQueryHandler: BaseHandler, IRequestHandler<GetAllProductsQueryRequest, IList<GetAllProductsQueryResponse>>
     {
 
         private readonly IMapper mapper;    

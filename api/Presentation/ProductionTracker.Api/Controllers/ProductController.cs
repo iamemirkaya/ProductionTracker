@@ -4,6 +4,7 @@ using ProductionTracker.Application.Features.Products.Command.CreateProduct;
 using ProductionTracker.Application.Features.Products.Command.DeleteProduct;
 using ProductionTracker.Application.Features.Products.Command.UpdateProduct;
 using ProductionTracker.Application.Features.Products.Queries.GetAllProducts;
+using ProductionTracker.Application.Features.Products.Queries.GetProductById;
 
 namespace ProductionTracker.Api.Controllers
 {
@@ -32,12 +33,11 @@ namespace ProductionTracker.Api.Controllers
             return Ok(values);
         }
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateProduct(Guid id, [FromForm] UpdateProductCommandRequest request)
+        [HttpPut]
+        public async Task<IActionResult> UpdateProduct([FromForm] UpdateProductCommandRequest request)
         {
-            request.Id = id;
             await mediator.Send(request);
-            return Ok("Ürün başarıyla güncellendi.");
+            return Ok();
         }
 
         [HttpDelete("{id}")]
@@ -46,6 +46,14 @@ namespace ProductionTracker.Api.Controllers
             var deleteCommand = new DeleteProductCommandRequest { Id = id };
             await mediator.Send(deleteCommand);
             return Ok("Ürün başarıyla silindi.");
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetProductById(Guid id)
+        {
+            var query = new GetProductByIdQueryRequest { Id = id };
+            var result = await mediator.Send(query);
+            return Ok(result);
         }
     }
 }

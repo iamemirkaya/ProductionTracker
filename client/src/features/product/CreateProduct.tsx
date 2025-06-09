@@ -5,7 +5,7 @@ import LoadingSpinner from "../../app/shared/components/LoadingSpinner";
 import { Upload, Image } from 'lucide-react';
 
 
-export default function ProductAdd() {
+export default function CreateProduct() {
 
   const [addProduct, { isLoading}] = useAddProductMutation();
   const [errorMessage, setErrorMessage] = useState('');

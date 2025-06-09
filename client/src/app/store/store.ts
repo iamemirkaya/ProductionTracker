@@ -2,14 +2,22 @@ import { configureStore } from "@reduxjs/toolkit";
 import { uiSlice } from "../layout/uiSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { productApi } from "../../features/product/productApi";
+import { listenerMiddleware } from "../middleware/listenerMiddleware";
+import { workshopApi } from "../../features/workshop/workshopApi";
+
 
 export const store = configureStore({
-    reducer: {
-        ui: uiSlice.reducer, 
+    reducer: {        
         [productApi.reducerPath]: productApi.reducer, 
+        [workshopApi.reducerPath]: workshopApi.reducer,
+        ui: uiSlice.reducer, 
     },
     middleware: (getDefaultMiddleware) =>
-        getDefaultMiddleware().concat(productApi.middleware), 
+        getDefaultMiddleware().prepend(listenerMiddleware.middleware).concat(
+            productApi.middleware,
+            workshopApi.middleware,
+        ), 
+    
 });
 
 
