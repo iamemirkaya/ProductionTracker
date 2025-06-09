@@ -44,6 +44,7 @@ namespace ProductionTracker.Application.Features.Products.Command.UpdateProduct
             product.UnitPrice = request.UnitPrice;
             product.StockQuantity = request.StockQuantity;
 
+            await writeRepository.UpdateAsync(product);
             await unitOfWork.SaveAsync();
 
             return Unit.Value;
