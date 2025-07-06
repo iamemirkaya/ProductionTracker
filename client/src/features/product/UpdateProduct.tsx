@@ -44,7 +44,7 @@ export default function UpdateProduct() {
     event.preventDefault();
 
         const formData = new FormData();
-        formData.append("Id", id!); // <== backend güncelleme için Id bekliyorsa
+        formData.append("Id", id!); 
         formData.append("Name", formState.name);
         formData.append("Code", formState.code);
         formData.append("UnitPrice", formState.unitPrice);

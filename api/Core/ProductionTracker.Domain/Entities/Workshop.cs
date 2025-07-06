@@ -12,5 +12,7 @@ namespace ProductionTracker.Domain.Entities
         public string Name { get; set; }
 
         public int WorkerCount { get; set; }
+
+        public ICollection<ProductionLog> ProductionLogs { get; set; }
     }
 }

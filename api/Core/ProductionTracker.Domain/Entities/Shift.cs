@@ -11,10 +11,11 @@ namespace ProductionTracker.Domain.Entities
     {
         public string Name { get; set; }
 
-        public TimeSpan ShiftMinute { get; set; }
+        public int ShiftMinute { get; set; }
 
-        public TimeOnly startTime { get; set; }
+        public string StartTime { get; set; } 
+        public string EndTime { get; set; }
 
-        public TimeOnly endTime { get; set; }
+        public ICollection<ProductionLog> ProductionLogs { get; set; }
     }
 }

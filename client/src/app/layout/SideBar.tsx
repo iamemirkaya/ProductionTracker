@@ -10,11 +10,11 @@ export default function SideBar() {
       <button
         onClick={() => setOpen(!open)}
         className={`absolute top-4 right-4 text-2xl transition-colors duration-300 ${
-          open ? "text-red-500 hover:text-red-400" : "text-green-400 hover:text-green-300" // Değişiklik burada: açıkken kırmızı, kapalıyken yeşil
+          open ? "text-red-500 hover:text-red-400" : "text-green-400 hover:text-green-300"
         }`}
         title={open ? "Menüyü Kapat" : "Menüyü Aç"}
       >
-        {open ? "✕" : "☰"} {/* Değişiklik burada: açıkken çarpı, kapalıyken hamburger ikonu */}
+        {open ? "✕" : "☰"}
       </button>
 
       {open && <h2 className="text-xl font-bold mt-16 ml-4 mb-8">Üretim Takip</h2>}
@@ -34,6 +34,15 @@ export default function SideBar() {
         </Link>
         <Link to="/createWorkshop" className="hover:bg-gray-700 p-2 rounded text-sm w-full text-left">           
           {open ? "Atölye Ekle" : "➕"}         
+        </Link> 
+        <Link to="/shift" className="hover:bg-gray-700 p-2 rounded text-sm w-full text-left">
+          {open ? "Vardiyalar" : "⏱️"}
+        </Link>
+        <Link to="/createShift" className="hover:bg-gray-700 p-2 rounded text-sm w-full text-left">           
+          {open ? "Vardiya Ekle" : "➕"}         
+        </Link>
+        <Link to="/production" className="hover:bg-gray-700 p-2 rounded text-sm w-full text-left">
+          {open ? "Üretim Takip" : "📊"}
         </Link> 
       </nav>
     </div>

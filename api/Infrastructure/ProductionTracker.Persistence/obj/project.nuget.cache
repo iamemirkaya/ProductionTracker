@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "bMVOXFyOR1o=",
+  "dgSpecHash": "tOQ2teJzr88=",
   "success": true,
   "projectFilePath": "C:\\Users\\emir kaya\\Desktop\\Projeler\\ProductionTracker\\api\\Infrastructure\\ProductionTracker.Persistence\\ProductionTracker.Persistence.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\emir kaya\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\emir kaya\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\emir kaya\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\emir kaya\\.nuget\\packages\\cloudinarydotnet\\1.27.5\\cloudinarydotnet.1.27.5.nupkg.sha512",

@@ -60,10 +60,12 @@ namespace ProductionTracker.Persistence.Repositories
 
         public async Task<int> CountAsync(Expression<Func<T, bool>>? predicate = null)
         {
-            Table.AsNoTracking();
-            if (predicate is not null) Table.Where(predicate);
-
-            return await Table.CountAsync();
+            IQueryable<T> queryable = Table.AsNoTracking(); 
+            if (predicate is not null)
+            {
+                queryable = queryable.Where(predicate); 
+            }
+            return await queryable.CountAsync(); 
         }
 
         public IQueryable<T> Find(Expression<Func<T, bool>> predicate, bool enableTracking = false)

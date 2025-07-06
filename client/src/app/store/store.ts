@@ -4,18 +4,24 @@ import { useDispatch, useSelector } from "react-redux";
 import { productApi } from "../../features/product/productApi";
 import { listenerMiddleware } from "../middleware/listenerMiddleware";
 import { workshopApi } from "../../features/workshop/workshopApi";
+import { shiftApi } from "../../features/shift/shiftApi";
+import { productLogApi } from "../../features/ProductLog/productLogApi";
 
 
 export const store = configureStore({
     reducer: {        
         [productApi.reducerPath]: productApi.reducer, 
         [workshopApi.reducerPath]: workshopApi.reducer,
+        [shiftApi.reducerPath]: shiftApi.reducer,
+        [productLogApi.reducerPath]: productLogApi.reducer,
         ui: uiSlice.reducer, 
     },
     middleware: (getDefaultMiddleware) =>
         getDefaultMiddleware().prepend(listenerMiddleware.middleware).concat(
             productApi.middleware,
             workshopApi.middleware,
+            shiftApi.middleware,
+            productLogApi.middleware,
         ), 
     
 });

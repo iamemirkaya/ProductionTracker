@@ -7,8 +7,20 @@
       "RelativeMoniker": "D:0:0:{3C60A5BF-D80C-4BCE-8928-54198776C7A2}|Presentation\\ProductionTracker.Api\\ProductionTracker.Api.csproj|solutionrelative:presentation\\productiontracker.api\\controllers\\workshopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C60A5BF-D80C-4BCE-8928-54198776C7A2}|Presentation\\ProductionTracker.Api\\ProductionTracker.Api.csproj|c:\\users\\emir kaya\\desktop\\projeler\\productiontracker\\api\\presentation\\productiontracker.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C60A5BF-D80C-4BCE-8928-54198776C7A2}|Presentation\\ProductionTracker.Api\\ProductionTracker.Api.csproj|solutionrelative:presentation\\productiontracker.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6B6F8A7A-6ADA-4514-AA54-76CA56002FC2}|Core\\ProductionTracker.Application\\ProductionTracker.Application.csproj|c:\\users\\emir kaya\\desktop\\projeler\\productiontracker\\api\\core\\productiontracker.application\\mappingprofiles\\productionlogprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B6F8A7A-6ADA-4514-AA54-76CA56002FC2}|Core\\ProductionTracker.Application\\ProductionTracker.Application.csproj|solutionrelative:core\\productiontracker.application\\mappingprofiles\\productionlogprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B6F8A7A-6ADA-4514-AA54-76CA56002FC2}|Core\\ProductionTracker.Application\\ProductionTracker.Application.csproj|c:\\users\\emir kaya\\desktop\\projeler\\productiontracker\\api\\core\\productiontracker.application\\features\\workshops\\queries\\getallworkshops\\getallworkshopsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B6F8A7A-6ADA-4514-AA54-76CA56002FC2}|Core\\ProductionTracker.Application\\ProductionTracker.Application.csproj|solutionrelative:core\\productiontracker.application\\features\\workshops\\queries\\getallworkshops\\getallworkshopsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B6F8A7A-6ADA-4514-AA54-76CA56002FC2}|Core\\ProductionTracker.Application\\ProductionTracker.Application.csproj|c:\\users\\emir kaya\\desktop\\projeler\\productiontracker\\api\\core\\productiontracker.application\\features\\workshops\\queries\\getallworkshops\\getallworkshopqueryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B6F8A7A-6ADA-4514-AA54-76CA56002FC2}|Core\\ProductionTracker.Application\\ProductionTracker.Application.csproj|solutionrelative:core\\productiontracker.application\\features\\workshops\\queries\\getallworkshops\\getallworkshopqueryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B6F8A7A-6ADA-4514-AA54-76CA56002FC2}|Core\\ProductionTracker.Application\\ProductionTracker.Application.csproj|c:\\users\\emir kaya\\desktop\\projeler\\productiontracker\\api\\core\\productiontracker.application\\features\\workshops\\queries\\getallworkshops\\getallworkshopsqueryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B6F8A7A-6ADA-4514-AA54-76CA56002FC2}|Core\\ProductionTracker.Application\\ProductionTracker.Application.csproj|solutionrelative:core\\productiontracker.application\\features\\workshops\\queries\\getallworkshops\\getallworkshopsqueryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,10 +38,6 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
@@ -38,19 +46,15 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\emir kaya\\Desktop\\Projeler\\ProductionTracker\\api\\Presentation\\ProductionTracker.Api\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "Presentation\\ProductionTracker.Api\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\emir kaya\\Desktop\\Projeler\\ProductionTracker\\api\\Presentation\\ProductionTracker.Api\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "Presentation\\ProductionTracker.Api\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T20:08:53.076Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
@@ -60,9 +64,61 @@
               "RelativeDocumentMoniker": "Presentation\\ProductionTracker.Api\\Controllers\\WorkshopController.cs",
               "ToolTip": "C:\\Users\\emir kaya\\Desktop\\Projeler\\ProductionTracker\\api\\Presentation\\ProductionTracker.Api\\Controllers\\WorkshopController.cs",
               "RelativeToolTip": "Presentation\\ProductionTracker.Api\\Controllers\\WorkshopController.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAuwBkAAAAJAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwCIAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T20:08:33.295Z",
+              "WhenOpened": "2025-07-06T15:35:10.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductionLogProfile.cs",
+              "DocumentMoniker": "C:\\Users\\emir kaya\\Desktop\\Projeler\\ProductionTracker\\api\\Core\\ProductionTracker.Application\\MappingProfiles\\ProductionLogProfile.cs",
+              "RelativeDocumentMoniker": "Core\\ProductionTracker.Application\\MappingProfiles\\ProductionLogProfile.cs",
+              "ToolTip": "C:\\Users\\emir kaya\\Desktop\\Projeler\\ProductionTracker\\api\\Core\\ProductionTracker.Application\\MappingProfiles\\ProductionLogProfile.cs",
+              "RelativeToolTip": "Core\\ProductionTracker.Application\\MappingProfiles\\ProductionLogProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T15:03:58.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GetAllWorkshopsQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\emir kaya\\Desktop\\Projeler\\ProductionTracker\\api\\Core\\ProductionTracker.Application\\Features\\Workshops\\Queries\\GetAllWorkshops\\GetAllWorkshopsQueryHandler.cs",
+              "RelativeDocumentMoniker": "Core\\ProductionTracker.Application\\Features\\Workshops\\Queries\\GetAllWorkshops\\GetAllWorkshopsQueryHandler.cs",
+              "ToolTip": "C:\\Users\\emir kaya\\Desktop\\Projeler\\ProductionTracker\\api\\Core\\ProductionTracker.Application\\Features\\Workshops\\Queries\\GetAllWorkshops\\GetAllWorkshopsQueryHandler.cs",
+              "RelativeToolTip": "Core\\ProductionTracker.Application\\Features\\Workshops\\Queries\\GetAllWorkshops\\GetAllWorkshopsQueryHandler.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAADwvxEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T15:02:32.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GetAllWorkshopQueryRequest.cs",
+              "DocumentMoniker": "C:\\Users\\emir kaya\\Desktop\\Projeler\\ProductionTracker\\api\\Core\\ProductionTracker.Application\\Features\\Workshops\\Queries\\GetAllWorkshops\\GetAllWorkshopQueryRequest.cs",
+              "RelativeDocumentMoniker": "Core\\ProductionTracker.Application\\Features\\Workshops\\Queries\\GetAllWorkshops\\GetAllWorkshopQueryRequest.cs",
+              "ToolTip": "C:\\Users\\emir kaya\\Desktop\\Projeler\\ProductionTracker\\api\\Core\\ProductionTracker.Application\\Features\\Workshops\\Queries\\GetAllWorkshops\\GetAllWorkshopQueryRequest.cs",
+              "RelativeToolTip": "Core\\ProductionTracker.Application\\Features\\Workshops\\Queries\\GetAllWorkshops\\GetAllWorkshopQueryRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T14:57:44.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetAllWorkshopsQueryResponse.cs",
+              "DocumentMoniker": "C:\\Users\\emir kaya\\Desktop\\Projeler\\ProductionTracker\\api\\Core\\ProductionTracker.Application\\Features\\Workshops\\Queries\\GetAllWorkshops\\GetAllWorkshopsQueryResponse.cs",
+              "RelativeDocumentMoniker": "Core\\ProductionTracker.Application\\Features\\Workshops\\Queries\\GetAllWorkshops\\GetAllWorkshopsQueryResponse.cs",
+              "ToolTip": "C:\\Users\\emir kaya\\Desktop\\Projeler\\ProductionTracker\\api\\Core\\ProductionTracker.Application\\Features\\Workshops\\Queries\\GetAllWorkshops\\GetAllWorkshopsQueryResponse.cs",
+              "RelativeToolTip": "Core\\ProductionTracker.Application\\Features\\Workshops\\Queries\\GetAllWorkshops\\GetAllWorkshopsQueryResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T14:34:53.486Z",
               "EditorCaption": ""
             }
           ]

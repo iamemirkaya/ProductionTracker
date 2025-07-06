@@ -20,5 +20,7 @@ namespace ProductionTracker.Domain.Entities
         public int StockQuantity { get; set; }
 
         public string? PublicId { get; set; }
+
+        public ICollection<ProductionLog> ProductionLogs { get; set; }
     }
 }

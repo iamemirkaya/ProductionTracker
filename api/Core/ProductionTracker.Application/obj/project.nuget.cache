@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "NimA8FbD6bA=",
+  "dgSpecHash": "vLuEH2JeG4M=",
   "success": true,
   "projectFilePath": "C:\\Users\\emir kaya\\Desktop\\Projeler\\ProductionTracker\\api\\Core\\ProductionTracker.Application\\ProductionTracker.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\emir kaya\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\emir kaya\\.nuget\\packages\\cloudinarydotnet\\1.27.5\\cloudinarydotnet.1.27.5.nupkg.sha512",
     "C:\\Users\\emir kaya\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",
     "C:\\Users\\emir kaya\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\12.0.0\\fluentvalidation.dependencyinjectionextensions.12.0.0.nupkg.sha512",

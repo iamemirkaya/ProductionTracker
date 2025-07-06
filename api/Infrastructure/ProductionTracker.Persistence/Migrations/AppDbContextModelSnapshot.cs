@@ -109,6 +109,10 @@ namespace ProductionTracker.Persistence.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("EndTime")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
@@ -116,14 +120,12 @@ namespace ProductionTracker.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<TimeSpan>("ShiftMinute")
-                        .HasColumnType("time");
+                    b.Property<int>("ShiftMinute")
+                        .HasColumnType("int");
 
-                    b.Property<TimeOnly>("endTime")
-                        .HasColumnType("time");
-
-                    b.Property<TimeOnly>("startTime")
-                        .HasColumnType("time");
+                    b.Property<string>("StartTime")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -157,19 +159,19 @@ namespace ProductionTracker.Persistence.Migrations
             modelBuilder.Entity("ProductionTracker.Domain.Entities.ProductionLog", b =>
                 {
                     b.HasOne("ProductionTracker.Domain.Entities.Product", "Product")
-                        .WithMany()
+                        .WithMany("ProductionLogs")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("ProductionTracker.Domain.Entities.Shift", "Shift")
-                        .WithMany()
+                        .WithMany("ProductionLogs")
                         .HasForeignKey("ShiftId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("ProductionTracker.Domain.Entities.Workshop", "Workshop")
-                        .WithMany()
+                        .WithMany("ProductionLogs")
                         .HasForeignKey("WorkshopId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -179,6 +181,21 @@ namespace ProductionTracker.Persistence.Migrations
                     b.Navigation("Shift");
 
                     b.Navigation("Workshop");
+                });
+
+            modelBuilder.Entity("ProductionTracker.Domain.Entities.Product", b =>
+                {
+                    b.Navigation("ProductionLogs");
+                });
+
+            modelBuilder.Entity("ProductionTracker.Domain.Entities.Shift", b =>
+                {
+                    b.Navigation("ProductionLogs");
+                });
+
+            modelBuilder.Entity("ProductionTracker.Domain.Entities.Workshop", b =>
+                {
+                    b.Navigation("ProductionLogs");
                 });
 #pragma warning restore 612, 618
         }
