@@ -7,6 +7,11 @@ import CreateProduct from "../../features/product/CreateProduct";
 import UpdateProduct from "../../features/product/UpdateProduct";
 import Workshop from "../../features/workshop/Workshop";
 import CreateWorkshop from "../../features/workshop/CreateWorkshop";
+import UpdateWorkshop from "../../features/workshop/UpdateWorkshop";
+import Shift from "../../features/shift/Shift";
+import CreateShift from "../../features/shift/CreateShift";
+import UpdateShift from "../../features/shift/UpdateShift";
+import Production from "../../features/ProductLog/Production";
 
 
 export const router = createBrowserRouter([
@@ -21,6 +26,11 @@ export const router = createBrowserRouter([
             { path: 'update-product/:id', element: <UpdateProduct /> },
             {path: 'workshop', element: <Workshop />},
             {path: 'createWorkshop', element: <CreateWorkshop />},
+            { path: 'update-workshop/:id', element: <UpdateWorkshop /> },
+            {path: 'shift', element: <Shift />},
+            {path: 'createShift', element: <CreateShift/>},
+            { path: 'update-shift/:id', element: <UpdateShift /> },
+            {path: 'production', element: <Production />},
             
         ]
     }

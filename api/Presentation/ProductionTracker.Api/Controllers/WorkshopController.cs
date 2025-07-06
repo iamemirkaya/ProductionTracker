@@ -26,9 +26,9 @@ namespace ProductionTracker.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> WorkshopList()
+        public async Task<IActionResult> WorkshopList([FromQuery] GetAllWorkshopQueryRequest request)
         {
-            var values = await mediator.Send(new GetAllWorkshopQueryRequest());
+            var values = await mediator.Send(request);
             return Ok(values);
         }
 
@@ -41,7 +41,7 @@ namespace ProductionTracker.Api.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> UpdateWorkshop([FromForm] UpdateWorkshopCommandRequest request)
+        public async Task<IActionResult> UpdateWorkshop(UpdateWorkshopCommandRequest request)
         {
             await mediator.Send(request);
             return Ok();

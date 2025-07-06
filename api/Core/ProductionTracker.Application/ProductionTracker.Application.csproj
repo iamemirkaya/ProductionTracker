@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
     <PackageReference Include="CloudinaryDotNet" Version="1.27.5" />
     <PackageReference Include="FluentValidation" Version="12.0.0" />
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.0.0" />
@@ -19,6 +20,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ProductionTracker.Domain\ProductionTracker.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\ProductionLogs\BusinessRules\" />
+    <Folder Include="Features\ProductionLogs\Exceptions\" />
   </ItemGroup>
 
 </Project>

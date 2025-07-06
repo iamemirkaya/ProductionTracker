@@ -1408,6 +1408,7 @@
       },
       "ProductionTracker.Application/1.0.0": {
         "dependencies": {
+          "AutoMapper": "14.0.0",
           "CloudinaryDotNet": "1.27.5",
           "FluentValidation": "12.0.0",
           "FluentValidation.DependencyInjectionExtensions": "12.0.0",

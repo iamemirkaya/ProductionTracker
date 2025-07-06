@@ -1,6 +1,7 @@
 import { createApi } from '@reduxjs/toolkit/query/react'; 
 import { baseQueryWithErrorHandling } from "../../app/api/baseApi";
 import type { CreateWorkshopRequest, Workshop } from "../../app/models/workshop";
+import type { GetWorkshopsParams, PagedResponse } from '../../app/models/paged';
 
 
 export const workshopApi = createApi({
@@ -8,9 +9,10 @@ export const workshopApi = createApi({
   baseQuery: baseQueryWithErrorHandling,
   tagTypes: ['Workshops'],
   endpoints: (builder) => ({
-    getAllWorkshops: builder.query<Workshop[], void>({
-      query: () => 'api/Workshop/WorkshopList',
-       providesTags: ['Workshops'],
+    getAllWorkshops: builder.query<PagedResponse<Workshop>, GetWorkshopsParams>({
+      query: ({ page, pageSize }) =>
+        `api/Workshop/WorkshopList?page=${page}&pageSize=${pageSize}`,
+      providesTags: ['Workshops'],
     }),
     getWorkshopById: builder.query<Workshop, string>({
       query: (id) => `api/Workshop/GetWorkshopById/${id}`,
@@ -23,11 +25,11 @@ export const workshopApi = createApi({
       }),
       invalidatesTags: ['Workshops'],
     }),
-    updateWorkshop: builder.mutation<void, FormData>({
-      query: (formData) => ({
+    updateWorkshop: builder.mutation<void, Workshop>({
+      query: (requestData) => ({
         url: 'api/Workshop/UpdateWorkshop',
         method: 'PUT',
-        body: formData,
+        body: requestData,
       }),
       invalidatesTags: ['Workshops'],
     }),

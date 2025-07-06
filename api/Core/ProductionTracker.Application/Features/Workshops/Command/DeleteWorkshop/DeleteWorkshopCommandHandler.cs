@@ -13,7 +13,7 @@ namespace ProductionTracker.Application.Features.Workshops.Command.DeleteWorksho
         private readonly WorkshopBusinessRules workshopBusinessRules;
 
 
-        public DeleteWorkshopCommandHandler(IUnitOfWork unitOfWork, WorkshopBusinessRules workshopBusinessRules, IImageService imageService)
+        public DeleteWorkshopCommandHandler(IUnitOfWork unitOfWork, WorkshopBusinessRules workshopBusinessRules)
         {
             this.unitOfWork = unitOfWork;
             this.workshopBusinessRules = workshopBusinessRules;
