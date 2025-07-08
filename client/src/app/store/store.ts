@@ -6,6 +6,7 @@ import { listenerMiddleware } from "../middleware/listenerMiddleware";
 import { workshopApi } from "../../features/workshop/workshopApi";
 import { shiftApi } from "../../features/shift/shiftApi";
 import { productLogApi } from "../../features/ProductLog/productLogApi";
+import workshopReducer from '../../features/workshop/workshopSlice';
 
 
 export const store = configureStore({
@@ -15,6 +16,7 @@ export const store = configureStore({
         [shiftApi.reducerPath]: shiftApi.reducer,
         [productLogApi.reducerPath]: productLogApi.reducer,
         ui: uiSlice.reducer, 
+        workshop: workshopReducer,
     },
     middleware: (getDefaultMiddleware) =>
         getDefaultMiddleware().prepend(listenerMiddleware.middleware).concat(

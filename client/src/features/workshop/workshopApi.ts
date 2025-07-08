@@ -9,9 +9,21 @@ export const workshopApi = createApi({
   baseQuery: baseQueryWithErrorHandling,
   tagTypes: ['Workshops'],
   endpoints: (builder) => ({
-    getAllWorkshops: builder.query<PagedResponse<Workshop>, GetWorkshopsParams>({
-      query: ({ page, pageSize }) =>
-        `api/Workshop/WorkshopList?page=${page}&pageSize=${pageSize}`,
+    getPagedWorkshops: builder.query<PagedResponse<Workshop>, GetWorkshopsParams>({
+      query: (params) => {
+        const searchParams = new URLSearchParams();
+        if (params.page) searchParams.append('page', params.page.toString());
+        if (params.pageSize) searchParams.append('pageSize', params.pageSize.toString());
+        if (params.searchTerm) searchParams.append('searchTerm', params.searchTerm); 
+        return `api/Workshop/GetPagedWorkshops?${searchParams.toString()}`;
+      },
+      providesTags: (result) =>
+        result
+          ? [...result.data.map(({ id }) => ({ type: 'Workshops' as const, id })), 'Workshops']
+          : ['Workshops'],
+    }),
+    getAllWorkshops: builder.query<Workshop, void>({
+      query: () =>`api/Workshop/WorkshopList`,
       providesTags: ['Workshops'],
     }),
     getWorkshopById: builder.query<Workshop, string>({
@@ -44,5 +56,5 @@ export const workshopApi = createApi({
   }),
 });
 
-export const {useGetAllWorkshopsQuery,useCreateWorkshopMutation,useUpdateWorkshopMutation,
+export const {useGetAllWorkshopsQuery,useCreateWorkshopMutation,useUpdateWorkshopMutation,useGetPagedWorkshopsQuery,
   useDeleteWorkshopMutation,useGetWorkshopByIdQuery} = workshopApi;
