@@ -1,9 +1,11 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using ProductionTracker.Application.Features.Shifts.Queries.GetAllShifts;
 using ProductionTracker.Application.Features.Workshops.Command.CreateWorkshop;
 using ProductionTracker.Application.Features.Workshops.Command.DeleteWorkshop;
 using ProductionTracker.Application.Features.Workshops.Command.UpdateWorkshop;
 using ProductionTracker.Application.Features.Workshops.Queries.GetAllWorkshops;
+using ProductionTracker.Application.Features.Workshops.Queries.GetPagedWorkshops;
 using ProductionTracker.Application.Features.Workshops.Queries.GetWorkshopById;
 
 namespace ProductionTracker.Api.Controllers
@@ -26,10 +28,17 @@ namespace ProductionTracker.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> WorkshopList([FromQuery] GetAllWorkshopQueryRequest request)
+        public async Task<IActionResult> WorkshopList()
         {
-            var values = await mediator.Send(request);
+            var values = await mediator.Send(new GetAllWorkshopQueryRequest());
             return Ok(values);
+        }
+
+        [HttpGet] 
+        public async Task<IActionResult> GetPagedWorkshops([FromQuery] GetPagedWorkshopsQueryRequest request)
+        {
+            var pagedValues = await mediator.Send(request);
+            return Ok(pagedValues);
         }
 
         [HttpDelete("{id}")]

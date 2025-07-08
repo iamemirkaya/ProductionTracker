@@ -9,4 +9,5 @@ export interface PagedResponse<T> {
 export interface GetWorkshopsParams {
   page: number;
   pageSize: number;
+  searchTerm?: string;
 }
