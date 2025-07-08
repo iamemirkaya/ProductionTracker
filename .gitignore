@@ -1,0 +1,56 @@
+# Visual Studio temporary files and build artifacts
+.vs/
+[Bb]in/
+[Oo]bj/
+
+# Common Visual Studio solution and project files
+*.suo
+*.user
+*.log
+*.pdb
+*.suo
+*.dbmdl
+*.jfm
+*.pfx
+*.snk
+*.vstags
+*.webtest
+*.rdlc.data
+*.sdf
+*.vssscc
+*.vspscc
+
+# NuGet packages
+packages/
+
+# ASP.NET Core specific files
+appsettings.Development.json  # Geliştirme ayarlarını genellikle commit etmeyiz
+appsettings.Production.json   # Üretim ayarlarını genellikle commit etmeyiz
+appsettings.*.json            # Tüm appsettings varyasyonları (dev, staging, production vb.)
+web.config                    # IIS konfigürasyon dosyası
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Node.js / Front-end (Client) specific files
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Editor directories and files
+.vscode/                      # VS Code ayarlarını yoksay (ortak olan extensions.json hariç)
+!.vscode/extensions.json      # Bu satır, .vscode/ klasörünü yoksayarken extensions.json'ı İSTİSNA EDER.
+                              # Eğer extensions.json'ı da yoksaymak istiyorsanız, bu satırı silin.
+.idea/                        # IntelliJ/WebStorm gibi IDE'ler için
+.DS_Store                     # macOS özgüsü
+
+# Other common temporary/system files
+Thumbs.db
+appsettings.Development.json
