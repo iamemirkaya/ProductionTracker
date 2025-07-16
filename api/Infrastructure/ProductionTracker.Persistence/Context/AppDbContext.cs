@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using ProductionTracker.Domain.Common;
 using ProductionTracker.Domain.Entities;
 using System.Linq.Expressions;
@@ -6,7 +7,7 @@ using System.Reflection;
 
 namespace ProductionTracker.Persistence.Context
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext<User, Role, Guid>
     {
         public AppDbContext() { }
 
