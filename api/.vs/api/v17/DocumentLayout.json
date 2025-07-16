@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\emir kaya\\Desktop\\Projeler\\ProductionTracker\\api\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{3C60A5BF-D80C-4BCE-8928-54198776C7A2}|Presentation\\ProductionTracker.Api\\ProductionTracker.Api.csproj|c:\\users\\emir kaya\\desktop\\projeler\\productiontracker\\api\\presentation\\productiontracker.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3C60A5BF-D80C-4BCE-8928-54198776C7A2}|Presentation\\ProductionTracker.Api\\ProductionTracker.Api.csproj|solutionrelative:presentation\\productiontracker.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C60A5BF-D80C-4BCE-8928-54198776C7A2}|Presentation\\ProductionTracker.Api\\ProductionTracker.Api.csproj|c:\\users\\emir kaya\\desktop\\projeler\\productiontracker\\api\\presentation\\productiontracker.api\\productiontracker.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{3C60A5BF-D80C-4BCE-8928-54198776C7A2}|Presentation\\ProductionTracker.Api\\ProductionTracker.Api.csproj|solutionrelative:presentation\\productiontracker.api\\productiontracker.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C60A5BF-D80C-4BCE-8928-54198776C7A2}|Presentation\\ProductionTracker.Api\\ProductionTracker.Api.csproj|c:\\users\\emir kaya\\desktop\\projeler\\productiontracker\\api\\presentation\\productiontracker.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3C60A5BF-D80C-4BCE-8928-54198776C7A2}|Presentation\\ProductionTracker.Api\\ProductionTracker.Api.csproj|solutionrelative:presentation\\productiontracker.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -47,45 +34,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\emir kaya\\Desktop\\Projeler\\ProductionTracker\\api\\Presentation\\ProductionTracker.Api\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "Presentation\\ProductionTracker.Api\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\emir kaya\\Desktop\\Projeler\\ProductionTracker\\api\\Presentation\\ProductionTracker.Api\\appsettings.Development.json",
-              "RelativeToolTip": "Presentation\\ProductionTracker.Api\\appsettings.Development.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-16T10:47:21.411Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductionTracker.Api.http",
-              "DocumentMoniker": "C:\\Users\\emir kaya\\Desktop\\Projeler\\ProductionTracker\\api\\Presentation\\ProductionTracker.Api\\ProductionTracker.Api.http",
-              "RelativeDocumentMoniker": "Presentation\\ProductionTracker.Api\\ProductionTracker.Api.http",
-              "ToolTip": "C:\\Users\\emir kaya\\Desktop\\Projeler\\ProductionTracker\\api\\Presentation\\ProductionTracker.Api\\ProductionTracker.Api.http",
-              "RelativeToolTip": "Presentation\\ProductionTracker.Api\\ProductionTracker.Api.http",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-07-16T10:47:20.004Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\emir kaya\\Desktop\\Projeler\\ProductionTracker\\api\\Presentation\\ProductionTracker.Api\\appsettings.json",
-              "RelativeDocumentMoniker": "Presentation\\ProductionTracker.Api\\appsettings.json",
-              "ToolTip": "C:\\Users\\emir kaya\\Desktop\\Projeler\\ProductionTracker\\api\\Presentation\\ProductionTracker.Api\\appsettings.json",
-              "RelativeToolTip": "Presentation\\ProductionTracker.Api\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-16T10:47:18.274Z",
-              "EditorCaption": ""
             }
           ]
         },
