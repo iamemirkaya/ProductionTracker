@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ProductionTracker.Application.Features.Shifts.Queries.GetAllShifts;
 using ProductionTracker.Application.Features.Workshops.Command.CreateWorkshop;
@@ -28,6 +29,7 @@ namespace ProductionTracker.Api.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "user")]
         public async Task<IActionResult> WorkshopList()
         {
             var values = await mediator.Send(new GetAllWorkshopQueryRequest());

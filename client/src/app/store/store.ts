@@ -7,7 +7,8 @@ import { workshopApi } from "../../features/workshop/workshopApi";
 import { shiftApi } from "../../features/shift/shiftApi";
 import { productLogApi } from "../../features/ProductLog/productLogApi";
 import workshopReducer from '../../features/workshop/workshopSlice';
-
+import { authApi } from "../../features/auth/authApi";
+import authReducer from "../../features/auth/authSlice";
 
 export const store = configureStore({
     reducer: {        
@@ -15,8 +16,10 @@ export const store = configureStore({
         [workshopApi.reducerPath]: workshopApi.reducer,
         [shiftApi.reducerPath]: shiftApi.reducer,
         [productLogApi.reducerPath]: productLogApi.reducer,
+        [authApi.reducerPath]: authApi.reducer,
         ui: uiSlice.reducer, 
         workshop: workshopReducer,
+        auth: authReducer,
     },
     middleware: (getDefaultMiddleware) =>
         getDefaultMiddleware().prepend(listenerMiddleware.middleware).concat(
@@ -24,6 +27,7 @@ export const store = configureStore({
             workshopApi.middleware,
             shiftApi.middleware,
             productLogApi.middleware,
+            authApi.middleware
         ), 
     
 });
